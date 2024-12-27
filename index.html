@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cuisine - Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">La Cuisine</div>
+        <div class="menu-toggle" id="mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="reserve-btn">Reserve Table</button></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to La Cuisine</h1>
+            <p>Experience fine dining at its best</p>
+            <button class="cta-btn">View Menu</button>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-categories">
+            <button class="category active" data-category="all">All</button>
+            <button class="category" data-category="starters">Starters</button>
+            <button class="category" data-category="mains">Main Course</button>
+            <button class="category" data-category="desserts">Desserts</button>
+        </div>
+        <div class="menu-items"></div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>Our Story</h2>
+            <p>Founded in 1970, La Cuisine has been serving exceptional dishes for over 50 years. Our commitment to quality and innovation has made us one of the most celebrated restaurants in the city.</p>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Fine Dining</h3>
+                    <p>Exceptional cuisine prepared by world-class chefs</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-wine-glass-alt"></i>
+                    <h3>Premium Drinks</h3>
+                    <p>Extensive wine collection and craft cocktails</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-concierge-bell"></i>
+                    <h3>Expert Service</h3>
+                    <p>Professional and attentive staff</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Location</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Foodville</p>
+                <h3>Hours</h3>
+                <p><i class="fas fa-clock"></i> Mon-Sun: 11:00 AM - 10:00 PM</p>
+                <h3>Contact</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> info@lacuisine.com</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone">
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <div id="reservation-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Reserve a Table</h2>
+            <form id="reservation-form">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone" required>
+                <input type="date" required>
+                <input type="time" required>
+                <select required>
+                    <option value="">Number of Guests</option>
+                    <option value="1">1 Person</option>
+                    <option value="2">2 People</option>
+                    <option value="3">3 People</option>
+                    <option value="4">4 People</option>
+                    <option value="5">5+ People</option>
+                </select>
+                <button type="submit">Reserve Now</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>La Cuisine</h3>
+                <p>Fine dining at its best since 1970</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 La Cuisine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/menu-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
